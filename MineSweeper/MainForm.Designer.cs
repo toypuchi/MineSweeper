@@ -1,5 +1,5 @@
 ﻿namespace MineSweeper {
-    partial class Form1 {
+    partial class MainForm {
         /// <summary>
         /// 必要なデザイナー変数です。
         /// </summary>
@@ -36,13 +36,13 @@
             this.btn_config.UseVisualStyleBackColor = true;
             this.btn_config.Click += new System.EventHandler(this.btn_config_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.btn_config);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "マインスイーパー";
             this.ResumeLayout(false);
 

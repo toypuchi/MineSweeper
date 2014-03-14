@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace MineSweeper {
     class Parameter {
-        private static int[] row_array = new int[] { 10, 20, 30 };              // 難易度別の行
-        private static int[] col_array = new int[] { 15, 30, 45 };              // 難易度別の列
+        private static int[] row_array = new int[] { 5, 10, 20 };              // 難易度別の行
+        private static int[] col_array = new int[] { 10, 20, 30 };              // 難易度別の列
         private static int[] bomb_num_array = new int[] { 5, 10, 15 };
 
         public static int row { get; private set; }             // 行
         public static int col { get; private set; }             // 列
         public static int bomb_num { get; private set; }        // 爆弾の数
 
+        public static int cell_height = 20;         // Cellの高さ
+        public static int cell_width = 20;          // Cellの幅
         /// <summary>
         /// パラメータの設定
         /// </summary>
