@@ -13,5 +13,31 @@ namespace MineSweeper {
         public Config() {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// OKボタンを押した際の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_OK_Click(object sender, EventArgs e) {
+            List<RadioButton> radio_btn_list = new List<RadioButton>();
+            radio_btn_list.Add(radioBtn_easy);
+            radio_btn_list.Add(radioBtn_nomal);
+            radio_btn_list.Add(radioBtn_hard);
+
+            string difficulty = "";
+            foreach (RadioButton btn in radio_btn_list) {
+                if (btn.Checked) {
+                    difficulty = btn.Text;
+                }
+            }
+
+            Parameter.SetParameter(difficulty);
+            this.Close();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e) {
+            this.Close();
+        }
     }
 }

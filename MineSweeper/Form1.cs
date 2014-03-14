@@ -13,5 +13,10 @@ namespace MineSweeper {
         public Form1() {
             InitializeComponent();
         }
+
+        private void btn_config_Click(object sender, EventArgs e) {
+            Config config = new Config();
+            config.ShowDialog();
+        }
     }
 }
